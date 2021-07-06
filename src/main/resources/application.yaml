@@ -10,3 +10,9 @@ spring:
 
 server:
   port: ${PORT:8080}
+
+app:
+  redirect_uri: ${REDIRECT_URI}
+  client_id: ${CLIENT_ID}
+  client_secret: ${CLIENT_SECRET}
+  front_login_url: ${FRONT_URL_LOGIN}
