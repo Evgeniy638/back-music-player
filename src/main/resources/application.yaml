@@ -1,12 +1,8 @@
-spring:
-  datasource:
-    driver-class-name: org.postgresql.Driver
-    url: ${DB_URL}
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
-    hikari:
-      max-lifetime: 60000
-      connection-timeout: 20000
-
 server:
   port: ${PORT:8080}
+
+app:
+  redirect_uri: ${REDIRECT_URI:""}
+  client_id: ${CLIENT_ID:""}
+  client_secret: ${CLIENT_SECRET:""}
+  front_login_url: ${FRONT_URL_LOGIN:""}
